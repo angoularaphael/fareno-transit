@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FARENO-TRANSIT - Présentation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .hero {
+            background: linear-gradient(to right, #005baa, #0078d4);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .hero .logo {
+            width: 300px; /* Adjusted to approximate the width of "FARENO-TRANSIT" text */
+            height: auto; /* Maintain aspect ratio */
+            margin-bottom: 20px;
+        }
+        .hero h1 {
+            font-size: 2.5em; /* Reference for logo size */
+        }
+        section {
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+        .about, .features, .gallery {
+            background-color: white;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            cursor: default;
+        }
+        .about:hover, .features:hover, .gallery:hover {
+            background-color: #e6f0fa;
+            box-shadow: 0 0 15px rgba(0, 120, 212, 0.5);
+            transform: translateY(-5px);
+        }
+        .about h2, .features h2, .gallery h2 {
+            color: #0078d4;
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style: none;
+            padding-left: 20px;
+        }
+        ul li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 20px;
+        }
+        ul li::before {
+            content: '\2714';
+            position: absolute;
+            left: 0;
+            color: #28a745;
+        }
+        .images {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .images img {
+            max-width: 250px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .images img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 12px rgba(0, 120, 212, 0.7);
+        }
+        /* Styles for the image preview modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+        .modal img {
+            max-width: 80%;
+            max-height: 80%;
+            border-radius: 8px;
+        }
+        .modal-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: white;
+            font-size: 30px;
+            cursor: pointer;
+        }
+        footer {
+            background-color: #222;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        footer ul {
+            list-style: none;
+            margin: 10px 0;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const images = document.querySelectorAll(".images img");
+            const modal = document.createElement("div");
+            modal.className = "modal";
+            modal.innerHTML = `
+                <span class="modal-close">&times;</span>
+                <img src="" alt="Preview" />
+            `;
+            document.body.appendChild(modal);
+            const modalImg = modal.querySelector("img");
+            const modalClose = modal.querySelector(".modal-close");
+
+            images.forEach(img => {
+                img.addEventListener("click", () => {
+                    // Show alert
+                    alert("Ceci est une capture d'écran de l'application FARENO-TRANSIT.");
+                    // Show modal with the clicked image
+                    modalImg.src = img.src;
+                    modal.style.display = "flex";
+                });
+            });
+
+            // Close modal when clicking the close button
+            modalClose.addEventListener("click", () => {
+                modal.style.display = "none";
+            });
+
+            // Close modal when clicking outside the image
+            modal.addEventListener("click", (e) => {
+                if (e.target === modal) {
+                    modal.style.display = "none";
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <header class="hero">
+        <img src="farenologo.jpg" alt="Logo FARENO" class="logo" />
+        <h1>FARENO-TRANSIT</h1>
+        <p>Application de gestion automatisée des stocks pour les entreprises</p>
+    </header>
+
+    <section class="about">
+        <h2>À propos de l'application</h2>
+        <p>FARENO-TRANSIT est une application développée sous Excel VBA qui permet d'automatiser la gestion des stocks dans une entreprise. Elle simplifie la saisie, le suivi, et l'analyse des entrées et sorties de marchandises. Elle vise à améliorer l'efficacité, réduire les erreurs humaines et fournir une vue d'ensemble claire de l'inventaire.</p>
+    </section>
+
+    <section class="features">
+        <h2>Fonctionnalités</h2>
+        <ul>
+            <li>Gestion des articles (ajout, modification, suppression)</li>
+            <li>Suivi des entrées et sorties de stock</li>
+            <li>Alertes de stock minimum</li>
+            <li>Statistiques de consommation et de rotation</li>
+            <li>Exportation des données en PDF</li>
+        </ul>
+    </section>
+
+    <section class="gallery">
+        <h2>Captures d'écran</h2>
+        <div class="images">
+            <img src="cap1.png" alt="Capture 1" />
+            <img src="cap2.png" alt="Capture 2" />
+            <img src="cap3.png" alt="Capture 3" />
+            <img src="cap4.png" alt="Capture 4" />
+            <img src="Cap5.png" alt="Capture 5" />
+            <img src="Cap6.png" alt="Capture 6" />
+        </div>
+    </section>
+
+    <footer>
+        <p><strong>Membres du groupe :</strong></p>
+        <ul>
+            <li>Angoula Onambele Germain Raphaël</li>
+            <li>Sop Nghontamia Serge Duval</li>
+            <li>Kaldjob Jean Baptiste</li>
+            <li>KAMTA DJUMO Jason-Karl F.</li>
+            <li>Eddy Etame Etame</li>
+            <li>TSANANG TEMEDJONG Aurélie</li>
+        </ul>
+        <p>Encadré par : M Ngouma</p>
+        <p>Année de réalisation : 2025</p>
+    </footer>
+</body>
+</html>
