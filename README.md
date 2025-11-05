@@ -73,7 +73,7 @@ Ce projet est sous licence MIT - voir le fichier [LICENSE](LICENSE) pour plus de
 
 - Mainteneur : @angoularaphael
 - GitHub : [angoularaphael](https://github.com/angoularaphael)
-- Email : germainraphaelangoulaonambele.com
+- Email : germainraphaelangoulaonambele@gmail.com
 
 ---
 
