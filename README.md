@@ -1,82 +1,79 @@
-# Fareno Transit
+# Fareno Transit - Application de Gestion de Stocks en VBA
 
-![Animated Transit](https://i.pinimg.com/originals/c3/bd/fe/c3bdfe4d7674a77a19f835da42125770.gif)
+![Animation Gestion de Stocks Professionnelle](https://www.smartsheet.com/sites/default/files/4_Inventory-Stock-Control-animation_1.gif)
 
-[![GitHub license](https://img.shields.io/github/license/angoularaphael/fareno-transit?style=flat-square)](https://github.com/angoularaphael/fareno-transit/blob/main/LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/angoularaphael/fareno-transit?style=flat-square)](https://github.com/angoularaphael/fareno-transit/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/angoularaphael/fareno-transit?style=flat-square)](https://github.com/angoularaphael/fareno-transit/network)
-[![GitHub issues](https://img.shields.io/github/issues/angoularaphael/fareno-transit?style=flat-square)](https://github.com/angoularaphael/fareno-transit/issues)
-[![Visitor Badge](https://visitor-badge.laobi.icu/badge?page_id=angoularaphael.fareno-transit&format=true)](https://github.com/angoularaphael/fareno-transit)
+[![Licence GitHub](https://img.shields.io/github/license/angoularaphael/fareno-transit?style=flat-square)](https://github.com/angoularaphael/fareno-transit/blob/main/LICENSE)
+[![Étoiles GitHub](https://img.shields.io/github/stars/angoularaphael/fareno-transit?style=flat-square)](https://github.com/angoularaphael/fareno-transit/stargazers)
+[![Forks GitHub](https://img.shields.io/github/forks/angoularaphael/fareno-transit?style=flat-square)](https://github.com/angoularaphael/fareno-transit/network)
+[![Problèmes GitHub](https://img.shields.io/github/issues/angoularaphael/fareno-transit?style=flat-square)](https://github.com/angoularaphael/fareno-transit/issues)
+[![Badge Visiteurs](https://visitor-badge.laobi.icu/badge?page_id=angoularaphael.fareno-transit&format=true)](https://github.com/angoularaphael/fareno-transit)
 
 ## Description
 
-Fareno Transit is an innovative open-source application designed for managing and visualizing public transit data, schedules, and routes. Built with Angular for a responsive and dynamic user interface, it helps users plan trips, track real-time updates, and optimize commuting experiences.
+Fareno Transit est une application open-source de gestion de stocks développée en VBA (Visual Basic for Applications), intégrée principalement à Microsoft Excel. Elle permet de gérer efficacement les inventaires, les entrées et sorties de stocks, les rapports analytiques et les alertes pour les niveaux bas de stock. Idéale pour les petites et moyennes entreprises gérant des flux de marchandises en transit ou en stockage.
 
-This README includes dynamic elements like updating badges for stars, forks, and visitors, as well as animated GIFs to bring the content to life. Customize further as your project grows!
+Ce README inclut des éléments dynamiques comme des badges qui se mettent à jour automatiquement et des animations professionnelles pour illustrer les fonctionnalités de manière plus sophistiquée. Personnalisez-le au fur et à mesure que votre projet évolue !
 
-![Moving Train Animation](https://classroomclipart.com/image/content7/64950/thumb.gif)
+![Animation Inventaire Professionnelle](https://cdn.dribbble.com/userupload/21773801/file/original-db26cce6009b8c256c435676bb413263.gif)
 
-## Features
+## Fonctionnalités
 
-- **Real-time Tracking**: Monitor buses, trains, and other transit vehicles in real-time.
-- **Route Planning**: Intelligent algorithms for optimal path suggestions.
-- **User Interface**: Sleek, animated UI powered by Angular animations.
-- **Data Integration**: Supports APIs from various transit providers.
-- **Customizable Maps**: Interactive maps with animations for route visualizations.
+- **Suivi en Temps Réel** : Surveillance des niveaux de stock avec mises à jour automatiques.
+- **Gestion des Entrées/Sorties** : Enregistrement facile des mouvements de stock via des formulaires VBA.
+- **Rapports et Analyses** : Génération de rapports personnalisés avec graphiques et tableaux dynamiques.
+- **Alertes Automatiques** : Notifications pour les stocks bas ou les expirations.
+- **Intégration Excel** : Utilisation de macros VBA pour une interface utilisateur intuitive et animée.
 
-## Demo
+## Démo
 
-Here's a quick animated demo of a transit simulation:
+Voici une animation professionnelle simulant une gestion d'inventaire :
 
-![School Bus Animation](https://classroomclipart.com/image/content7/64962/thumb.gif)
+![Animation Démo Stock Professionnelle](https://www.smartsheet.com/sites/default/files/4_Inventory-Stock-Control-animation_1.gif)
 
 ## Installation
 
-1. Clone the repository:
+Pour démarrer avec Fareno Transit :
+
+1. Clonez le dépôt :
    ```
    git clone https://github.com/angoularaphael/fareno-transit.git
    ```
-2. Navigate to the project directory:
-   ```
-   cd fareno-transit
-   ```
-3. Install dependencies:
-   ```
-   npm install
-   ```
-4. Run the development server:
-   ```
-   ng serve
-   ```
+2. Ouvrez le fichier Excel principal (par exemple, `FarenoTransit.xlsm`) dans Microsoft Excel.
+3. Activez les macros : Allez dans Fichier > Options > Centre de Confiance > Paramètres du Centre de Confiance > Paramètres des Macros > Activer toutes les macros.
+4. Exécutez l'application via le menu VBA ou les boutons intégrés.
 
-## Usage
+**Note** : Assurez-vous d'avoir Microsoft Excel installé (version 2010 ou supérieure recommandée pour une compatibilité optimale avec VBA).
 
-- Open the app in your browser at `http://localhost:4200`.
-- For production: `ng build --prod`.
-- Explore the dynamic features, including animated transitions between views.
+## Utilisation
 
-## Contributing
+- Ouvrez le fichier Excel et naviguez via l'interface utilisateur.
+- Pour ajouter un article : Utilisez le formulaire d'entrée de stock.
+- Générez un rapport : Cliquez sur le bouton "Rapports" pour des visualisations dynamiques.
+- Personnalisez les animations : Modifiez les macros VBA pour ajouter des transitions ou effets visuels.
 
-We welcome contributions! Follow these steps:
+Exemple de code VBA basique pour une alerte animée :
 
-1. Fork the repo.
-2. Create a feature branch: `git checkout -b feature/awesome-animation`.
-3. Commit changes: `git commit -m 'Add cool animation'`.
-4. Push: `git push origin feature/awesome-animation`.
-5. Open a Pull Request.
+## Contribution
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
+Les contributions sont les bienvenues ! Suivez ces étapes :
 
-## License
+1. Forkez le dépôt.
+2. Créez une nouvelle branche : `git checkout -b feature/votre-fonctionnalite`.
+3. Commitez vos changements : `git commit -m 'Ajout d'une nouvelle fonctionnalité'`.
+4. Poussez la branche : `git push origin feature/votre-fonctionnalite`.
+5. Ouvrez une Pull Request.
 
-MIT License - see [LICENSE](LICENSE) for details.
+Consultez [CONTRIBUTING.md](CONTRIBUTING.md) pour plus de détails (créez ce fichier si nécessaire).
+
+## Licence
+
+Ce projet est sous licence MIT - voir le fichier [LICENSE](LICENSE) pour plus de détails.
 
 ## Contact
 
-- Maintainer: @angoularaphael
-- GitHub: [angoularaphael](https://github.com/angoularaphael)
-- Email: your.email@example.com
+- Mainteneur : @angoularaphael
+- GitHub : [angoularaphael](https://github.com/angoularaphael)
+- Email : germainraphaelangoulaonambele.com
 
 ---
 
-This README is dynamic with badges that update automatically and includes animated GIFs for visual engagement. If you provide more project details (e.g., actual features or tech stack), I can refine it further! For now, I've assumed an Angular-based transit app based on the repo name.
