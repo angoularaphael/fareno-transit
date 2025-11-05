@@ -12,7 +12,6 @@
 
 Fareno Transit est une application open-source de gestion de stocks développée en VBA (Visual Basic for Applications), intégrée principalement à Microsoft Excel. Elle permet de gérer efficacement les inventaires, les entrées et sorties de stocks, les rapports analytiques et les alertes pour les niveaux bas de stock. Idéale pour les petites et moyennes entreprises gérant des flux de marchandises en transit ou en stockage.
 
-Ce README inclut des éléments dynamiques comme des badges qui se mettent à jour automatiquement et des animations professionnelles pour illustrer les fonctionnalités de manière plus sophistiquée. Personnalisez-le au fur et à mesure que votre projet évolue !
 
 ![Animation Inventaire Professionnelle](https://cdn.dribbble.com/userupload/21773801/file/original-db26cce6009b8c256c435676bb413263.gif)
 
@@ -25,8 +24,7 @@ Ce README inclut des éléments dynamiques comme des badges qui se mettent à jo
 - **Intégration Excel** : Utilisation de macros VBA pour une interface utilisateur intuitive et animée.
 
 ## Démo
-
-Voici une animation professionnelle simulant une gestion d'inventaire :
+Voici comment fonctionne un peu cette application.
 
 ![Animation Démo Stock Professionnelle](https://www.smartsheet.com/sites/default/files/4_Inventory-Stock-Control-animation_1.gif)
 
